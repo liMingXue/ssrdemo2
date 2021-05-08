@@ -3,11 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint",
     "dev": "webpack-dev-server --config ./config/webpack.dev.conf.js",
-    "ssrserver": "node server.js"
+    "server": "node server.js"
   },
   "dependencies": {
     "axios": "^0.21.1",
