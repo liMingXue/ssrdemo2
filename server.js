@@ -14,10 +14,11 @@ app.get('*', async (req, res)=>{
             runInNewContext: false
         })
 
-        renderer.renderToString({url: req.url}).then((html)=>{
+        renderer.renderToString({req, res}).then((html)=>{
             res.end(html)
-            // console.log(html);
-        }).catch((err)=>console.log(err))
+        }).catch(()=>{
+            res.end('页面被谁偷走了')
+        })
     })
 })
 
