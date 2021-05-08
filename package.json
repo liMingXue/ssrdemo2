@@ -3,7 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "build": "vue-cli-service build",
+    "build1": "vue-cli-service build",
+    "build:client": "webpack --config ./config/webpack.dev.conf.js",
+    "build:server": "webpack --config ./config/webpack.server.conf.js",
     "dev": "webpack-dev-server --config ./config/webpack.dev.conf.js",
     "server": "node server.js"
   },
